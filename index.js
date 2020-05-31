@@ -1,0 +1,20 @@
+
+
+    var lista = [0, 0, 247, 563, 224, 714, 0, 953, 708, 201, 887, 550, 515, 206, 131];
+    var n, i, k, aux;
+    n = lista.length;
+    console.log(lista); // Mostramos, por consola, la lista desordenada
+    // Algoritmo de burbuja
+    for (k = 1; k < n; k++) {
+        for (i = 0; i < (n - k); i++) {
+            if (lista[i] === 0) {
+                aux = lista[i];
+                lista[i] = lista[i + 1];
+                lista[i + 1] = aux;
+            }
+        }
+    }
+
+    console.log(lista); // Mostramos, por consola, la lista ya ordenada
+
+
